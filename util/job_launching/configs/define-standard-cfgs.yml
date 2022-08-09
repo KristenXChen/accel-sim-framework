@@ -37,7 +37,6 @@ QV100:
 QV100_64SM:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM7_QV100_SMs/gpgpusim.config"
 
-
 QV100_SASS:
     base_file: "$GPGPUSIM_ROOT/configs/tested-cfgs/SM7_QV100_SASS/gpgpusim.config"
 
@@ -159,6 +158,21 @@ FCFS:
 # Experimental - for SM 60 PTXplus support
 PTXPLUS_SM6:
     extra_params: "-gpgpu_ptx_convert_to_ptxplus 1 -gpgpu_ptx_force_max_capability 62 -gpgpu_ptx_force_min_capability 60"
+
+# Xuesi:
+# For per cluster frequency scaling support
+PER_CORE_FREQ_SCALING:
+    extra_params: "-gpgpu_per_cluster_freq_scaling_enabled 1"
+
+CORE_FREQ_ARR1:
+    extra_params: "-gpgpu_cluster_freq_array 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 
+                        1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0 : 1500.0"
 
 #Accelwattch configs 
 Accelwattch_SASS_SIM:

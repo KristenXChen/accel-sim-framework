@@ -172,7 +172,7 @@ def dir_option_test(name, default, this_directory):
 
 def parse_run_simulations_options():
     parser = OptionParser()
-    parser.add_option("-B", "--benchmark_list", dest="benchmark_list",
+    parseget_configr.add_option("-B", "--benchmark_list", dest="benchmark_list",
                   help="a comma seperated list of benchmark suites to run. See apps/define-*.yml for " +\
                         "the benchmark suite names.",
                   default="rodinia_2.0-ft")
